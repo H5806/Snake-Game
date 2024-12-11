@@ -9,13 +9,13 @@ Snake::Snake(Point start_position) : current_direction(RIGHT) {
 }
 
 Point Snake::front() const {
-    return body.front();
+    return body.front(); // מחזיר את מיקום הראש
 }
 
 void Snake::move() {
     Point head = front();
     // תזוזת הראש לפי הכיוון הנוכחי
-    switch (current_direction) {
+    switch (current_direction) { 
     case UP:    head.y -= 1; break;
     case DOWN:  head.y += 1; break;
     case LEFT:  head.x -= 1; break;

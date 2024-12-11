@@ -12,7 +12,7 @@ int main() {
         game.handle_input();
         game.update();
         game.render();
-        SDL_Delay(100); 
+        SDL_Delay(50); 
     }
 
     game.cleanup();

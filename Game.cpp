@@ -20,7 +20,7 @@ bool Game::initialize() {
 
 void Game::render() {
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // רקע שחור
-    SDL_RenderClear(renderer);
+    SDL_RenderClear(renderer); // אחרי שיצרנו את הרקע ננקה את הרינדור ונעביר אותו לנחש
 
     // ציור הנחש
     SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
